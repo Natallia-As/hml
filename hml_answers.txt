@@ -1,0 +1,114 @@
+ 1. Создать внешний репозиторий c названием XML:
+ GitHub ➡️ New repository ➡️ Create repository 
+ 
+ 2. Клонировать репозиторий XML на локальный компьютер:
+ git clone <HTTPS key>
+ 
+ 3. Внутри локального XML создать файл “new.xml”:
+ cd xml/
+ touch new.xml
+ 
+ 4. Добавить файл под гит:
+ git add .
+ 
+ 5. Закоммитить файл:
+ commit -m "commit message"
+ 
+ 6. Отправить файл на внешний GitHub репозиторий:
+ git push
+ 
+ 7. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML:
+ nano naw .hml
+ 
+ <?xml version="1.0" encoding="UTF-8"?>
+<student_1>
+  <name>Natallia</name>
+  <surname>Asievskaya</surname>
+  <age>37</age>
+  <pets>2</pets>
+  <desired_salary>100000$</desired_salary>
+</student_1>
+Ctrl +X потом Y потом Esc
+
+ 8. Отправить изменения на внешний репозиторий:
+ git add .
+ git commit -m "commit message"
+ git push
+ 
+ 9. Создать файл preferences.xml:
+ touch preferences.hml
+ 
+ 10. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML:
+ <?xml version="1.0" encoding="UTF-8"?>
+<student_1_hobbies>
+  <fav_movie>Midnight in Paris</fav_moviee>
+  <fav_TVshow>The Sopranos</fav_TV_show>
+  <fav_food>Italian cuisine</fav_food>
+  <fav_season>Spring</fav_season>
+  <country_to_visit>China</country_to_visit>
+</student_1_hobbies>
+Ctrl +X потом Y потом Esc
+ 
+ 11. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML:
+ 
+ touch skills.xml
+ 
+ nano skills.xml
+ 
+ <?xml version="1.0" encoding="UTF-8"?>
+ <my_future_skills>
+    <skill_1>QA_Theory</skill_1>
+    <skill_2>HTTP</skill_2>
+    <skill_3>Xcode</skill_3>
+    <skill_4>Postman</skill_4>
+    <skill_5>Charles</skill_5>
+    <skill_6>DevTools<skill_6>
+    <skill_7>VPN</skill_7>
+    <skill_8>Android_Studio</skill_8>
+    <skill_9>Git</skill_9>
+    <skill_10>Terminal_Linux</skill_10>
+    <skill_11>SQL</skill_11>
+ </my_future_skills>"
+
+Ctrl +X потом Y потом Esc
+
+ 12. Сделать коммит в одну строку:
+ git add .
+ git commit -m "commit message"
+ 
+ 13. Отправить сразу 2 файла на внешний репозиторий: 
+ git push
+ 
+ 14. На веб интерфейсе создать файл bug_report.xml.
+ ➡️ Add file ➡️ Create new file 
+ 
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+ ➡️ Commit new file
+ 
+ 16. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML:
+ <bug_report_01>
+  <ID>01</ID>
+  <Title>No notification, in the authorization form, about the successful registration of a new user</Title>
+  <STR>
+      <step_1>Go to the main page of the site (link)</step_1>
+		  <step_2>Enter data in the  \"Login\" field</step_2>
+		  <step_3>Enter data in the \"Password\" field</step_3>
+		  <step_4>Press \"Register\"</step_4>
+  </STR>
+  <Environment>
+		  <OS>iOS 16.2 iPhone 12 Pro</OS>
+		  <Browser>Safari 16.2</Browser>
+	</Environment>
+  <Actual result>A message appears, about successful registration</Actual result>
+	<Expected result>A user has no understanding of the registration result</Expected result>
+	<Severity>Minor</Severity>
+	<Priority>Low</Priority>
+	<Attachments>Link to the image or video with the bug</Attachments>
+</bug_report_01>
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+ ➡️ Commit changes
+ 
+ 18. Синхронизировать внешний и локальный репозиторий XML:
+ git pull
+ 
